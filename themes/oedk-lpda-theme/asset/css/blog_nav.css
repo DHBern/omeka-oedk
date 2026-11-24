@@ -1,0 +1,30 @@
+.nr {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: medium;
+}
+
+.nr:hover {
+var(--orange);
+}
+
+
+.active {
+    color: var(--orange);
+    font-weight: bolder;
+    font-size: large;
+}
+
+#previous {
+    color: var(--orange);
+
+}
+
+#next {
+    color: var(--orange);
+}
+
+.page #content .file {
+    border-color: transparent;
+}
