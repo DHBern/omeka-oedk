@@ -1,0 +1,348 @@
+<!DOCTYPE html><html lang="de-DE">    <head>
+        <meta charset="utf-8">
+<meta property="og&#x3A;title" content="Beitrag&#x20;hochladen&#x20;&#xB7;&#x20;DH&#x40;UNIBE&#x20;Omeka">
+<meta property="og&#x3A;type" content="website">
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;www.publics-arts.ch&#x2F;s&#x2F;oedk&#x2F;page&#x2F;upload-doc">
+<meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1">        <title>Beitrag hochladen · Öffentlichkeiten der Kunst · DH@UNIBE Omeka</title>        <link href="&#x2F;&#x2F;fonts.googleapis.com&#x2F;css&#x3F;family&#x3D;Archivo&#x2B;Black&#x7C;Assistant&#x3A;200,300,400" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/iconfonts.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/blog_nav.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/video.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/style.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet.geosearch/assets/css/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/css/mapping.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Collecting/asset/css/collecting.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/page-blocks.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/FieldsAsTags/asset/css/fieldsastags.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/vendor/chosen-js/chosen.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/AdvancedSearch/asset/css/search.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/css/language-switcher.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/vendor/flag-icon-css/css/flag-icon.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">                <script  src="&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.5.1&#x2F;jquery.min.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/nav.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/view.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/tos.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/blog_nav.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/img_display.js"></script>
+<script  src="../../../application/asset/js/global.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/ckeditor.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/adapters/jquery.js"></script>
+<script >
+    //<!--
+    CKEDITOR.config.customConfig = '\x2Fapplication\x2Fasset\x2Fjs\x2Fckeditor_config.js\x3Fv\x3D3.1.1'
+    //-->
+</script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet/leaflet.js"></script>
+<script  src="../../../modules/Mapping/asset/js/mapping-collecting-form.js"></script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet.geosearch/dist/bundle.min.js"></script>
+<script  src="../../../modules/Collecting/asset/js/collecting-block.js"></script>
+<script  src="../../../application/asset/js/recaptcha.js"></script>
+<script  async="async" defer="defer" src="https&#x3A;&#x2F;&#x2F;www.google.com&#x2F;recaptcha&#x2F;api.js&#x3F;onload&#x3D;recaptchaCallback&amp;render&#x3D;explicit"></script>
+<script >
+    //<!--
+    
+Omeka.jsTranslate = function(str) {
+    var jsTranslations = {"Something went wrong":"Etwas lief schief.","Make private":"Privat setzen","Make public":"Ver\u00f6ffentlichen","Expand":"Ausklappen","Collapse":"Einklappen","You have unsaved changes.":"Sie haben ungesicherte \u00c4nderungen.","Restore item set":"Sammlung wiederherstellen","Close icon set":"Close icon set","Open icon set":"Open icon set","[Untitled]":"[Ohne Titel]","Failed loading resource template from API":"Laden der Ressourcenvorlage von der API fehlgeschlagen","Restore property":"Eigenschaft wiederherstellen","There are no available pages.":"Keine verf\u00fcgbaren Seiten","Please enter a valid language tag":"Please enter a valid language tag","Title":"Titel","Description":"Beschreibung","Automatic mapping of empty values":"Automatic mapping of empty values","Available":"Available","Enabled":"Enabled","Find":"Find","Find resources\u2026":"Find resources\u2026","Processing\u2026":"Processing\u2026","Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index":"Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index","Advanced bulk edit":"Advanced bulk edit","The actions are processed in the order of the form. Be careful when mixing them.":"The actions are processed in the order of the form. Be careful when mixing them.","Cleaning":"Cleaning","Convert datatype":"Convert datatype","Displace values":"Displace values","Explode values":"Explode values","Media HTML":"Media HTML","Order values":"Order values","Replace literal values":"Replace literal values","Visibility of values":"Visibility of values","Remove mapping":"Remove mapping"};
+    return (str in jsTranslations) ? jsTranslations[str] : str;
+};
+    //-->
+</script>
+<script  defer="defer" src="../../../application/asset/vendor/chosen-js/chosen.jquery.min.js"></script>
+<script  defer="defer" src="../../../modules/AdvancedSearch/asset/js/search.js"></script>
+        <style>
+                        #top-nav > ul > li > a,
+            #featured .record a,
+            .site-page-pagination a,
+            #top-nav > ul > li > a,
+            #featured .record a,
+            .site-page-pagination a,
+            .results .result-title a {
+                color: transparent            }
+
+            p a,
+            span a,
+            .button,
+            button,
+            input[type="submit"],
+            .secondary-nav li a,
+            .pagination a.button,
+            .item-pagination a,
+            #featured .featured-meta h3,
+            .advanced-search,
+            .value a span,
+            .sub-menu,
+            .results .result-title a,
+            .results .resource-link .resource-name,
+            .results > a,
+            .results > ul + a,
+            .results li > a,
+            .breadcrumbs a,
+            #content .resource a,
+            .property a {
+                background-color: transparent;
+            }
+            
+        </style>
+    </head>
+
+    <body class="page"><div style="background:#fff3cd;padding:.5em 1em;font:14px sans-serif;border-bottom:1px solid #e0c97f">Static archive of a former Omeka site (snapshot 2026-11-24). Search and interactive features are not available.</div>        <div id="content" role="main">
+            
+    
+    
+<div class="blocks">
+    <div class='break transparent'></div><div class='break transparent'></div><style type="text/css">input,textarea{width: 100%;}
+form .field .field-meta, form .field label, form .field .label {color: white;}
+input[type="checkbox"]{width: 2%;}
+input[type="submit"]{background-color: var(--orange);
+width: 15%;font-size: 22px;}
+
+#intro{margin-top: 175px;
+}
+@media screen and (max-width: 640px){
+#intro{margin-top: -10px;}
+input[type="checkbox"]{width: 5%;float:left;}
+input[type="submit"]{background-color: var(--orange);
+width: 100%;font-size: 22px;}
+
+}
+</style>
+<p id="intro">Das ist die archivierte Seite des Beitragsformulars, das zum Ende der Projektlaufzeit geschlossen wurde.</p>
+
+<p>W&auml;hrend der Projektlaufzeit (2022-2026) konnten auf dieser Seite pers&ouml;nliche Erinnerungen an die Schweizerische Plastikausstellung in Form von Texten, Bildern, Screenshots, Videos, Audios und Links hochgeladen werden. Jede Einsendung wurde zun&auml;chst auf urheberrechtliche Fragen gepr&uuml;ft. Folgende Richtlinien galten f&uuml;r den Upload:</p>
+
+<p><em>&quot;Es d&uuml;rfen nur Beitr&auml;ge hochgeladen werden, deren Autor:in Sie sind. Die Inhalte unterliegen der Verantwortung der Person oder Rechtspers&ouml;nlichkeit, welche diese im Rahmen dieses Dienstes einstellt und zug&auml;nglich macht. Die hochgeladenen Beitr&auml;ge werden von uns nach Upload zun&auml;chst auf Urheber- und Pers&ouml;nlichkeitsrecht gepr&uuml;ft. Wo n&ouml;tig, werden Genehmigungen zur Ver&ouml;ffentlichung eingeholt &ndash; wir behalten uns vor, Material nicht zu ver&ouml;ffentlichen, wenn Rechtsanspr&uuml;che Dritter nicht gekl&auml;rt werden konnten. Mit dem Upload willigen Sie ein, dass die Daten auf unbeschr&auml;nkte Zeit gespeichert und ver&ouml;ffentlicht werden. Die Autorenschaft kann die L&ouml;schung einmal ver&ouml;ffentlichter Beitr&auml;ge jederzeit bei den Betreiber:innen der Webseite beantragen. Um einen Beitrag hochzuladen, muss eine g&uuml;ltige E-Mail-Adresse angegeben werden. Diese Angaben werden nicht publiziert. Ihren Beitrag k&ouml;nnen Sie nach Wunsch mit Ihrem Namen oder einem Alias kennzeichnen, es ist aber auch m&ouml;glich, einen Beitrag anonym zu ver&ouml;ffentlichen. Bearbeitungen oder Erg&auml;nzungen der Metadaten bleiben vorbehalten.&quot;</em></p>
+
+<p><em><label for="tos_accept_9">Jede Beitragende best&auml;tigte mit dem Upload, &quot;dass ich Urheber:in der Fotografien, des Texts, Videos, Audiobeitrags oder Social Media Kanals bin. Falls Personen abgebildet sind, habe ich ihr Einverst&auml;ndnis zur Ver&ouml;ffentlichung eingeholt. Ich willige ein, dass der Beitrag ver&ouml;ffentlicht und auf unbeschr&auml;nkte Zeit gespeichert wird. Mit dem Upload &uuml;bertrage ich das Nutzungsrecht an meinem Beitrag ohne zeitliche und r&auml;umliche Beschr&auml;nkung an die Betreiber:innen der Webseite. Hiermit erkl&auml;re ich mich damit einverstanden, dass die Website nach Abschluss des Projekts in ein Langzeitarchiv migriert wird. Ein &ndash; auch nur teilweiser &ndash; Widerruf der Einwilligung ist jederzeit durch schriftliche Mitteilung an die Betreiber der Website m&ouml;glich.</label>&quot;</em></p>
+<h2>Beitrag hochladen</h2>
+<form method="POST" name="collecting_form_9" action="https://omeka.unibe.ch/s/oedk/collecting/9/submit" enctype="multipart&#x2F;form-data" id="collecting_form_9" onsubmit="return false" onsubmit="return false"><div ><p><small>Eingaben mit * sind obligatorisch und werden publiziert</small></p></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_157">Titel Ihres Beitrages</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_157" required="required" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_138">Urheber:in Text/Bild/Video/Audio</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_138" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_155">Künstler:in</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_155" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_152">Eigene Rolle definieren</label>            </div>
+    <div class="inputs">
+        <select name="prompt_152" required="required"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="Archivar&#x3A;in">Archivar:in</option>
+<option value="Kulturarbeiter&#x3A;in">Kulturarbeiter:in</option>
+<option value="Fotograf&#x3A;in">Fotograf:in</option>
+<option value="K&#xFC;nstler&#x3A;in">Künstler:in</option>
+<option value="P&#xE4;dagoge&#x3A;in">Pädagoge:in</option>
+<option value="Fan">Fan</option>
+<option value="Protestb&#xFC;rger&#x3A;in">Protestbürger:in</option>
+<option value="Aktivist&#x3A;in">Aktivist:in</option>
+<option value="Andere">Andere</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_153">Andere Rolle beschreiben</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_153" value="">    </div>
+    </div>
+<input type="hidden" name="prompt_140" value=""><div class="field required">
+    <div class="field-meta">
+        <label for="file&#x5B;140&#x5D;">Hier kann Ihre Datei hochgeladen werden. Bitte wenn möglich mehrere Ansichten hinzufügen. Maximale Dateigrösse 256MB</label>            </div>
+    <div class="inputs">
+        <input type="file" name="file&#x5B;140&#x5D;&#x5B;&#x5D;" required="required" multiple="multiple">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_151">Kategorie</label>            </div>
+    <div class="inputs">
+        <select name="prompt_151" required="required"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="Erinnerung&#x2F;Anekdote">Erinnerung/Anekdote</option>
+<option value="Kunstwerk">Kunstwerk</option>
+<option value="Personen">Personen</option>
+<option value="Artikel&#x20;&#x28;Zeitung&#x20;usw.&#x29;">Artikel (Zeitung usw.)</option>
+<option value="Social&#x20;Media&#x20;&#x28;Screenshot&#x29;">Social Media (Screenshot)</option>
+<option value="Anderes">Anderes</option></select>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_141">Auf welches Jahr bezieht sich der Beitrag?</label>            </div>
+    <div class="inputs">
+        <select name="prompt_141" required="required"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="1954&#x20;1.&#x20;ESS-SPA">1954 1. ESS-SPA</option>
+<option value="1958&#x20;2.&#x20;ESS-SPA">1958 2. ESS-SPA</option>
+<option value="1962&#x20;3.&#x20;ESS-SPA">1962 3. ESS-SPA</option>
+<option value="1966&#x20;4.&#x20;ESS-SPA">1966 4. ESS-SPA</option>
+<option value="1970&#x20;5.&#x20;ESS-SPA">1970 5. ESS-SPA</option>
+<option value="1975&#x20;6.&#x20;ESS-SPA">1975 6. ESS-SPA</option>
+<option value="1980&#x20;7.&#x20;ESS-SPA">1980 7. ESS-SPA</option>
+<option value="1986&#x20;8.&#x20;ESS-SPA">1986 8. ESS-SPA</option>
+<option value="1991&#x20;9.&#x20;ESS-SPA">1991 9. ESS-SPA</option>
+<option value="2000&#x20;10.&#x20;ESS-SPA">2000 10. ESS-SPA</option>
+<option value="2009&#x20;11.&#x20;ESS-SPA">2009 11. ESS-SPA</option>
+<option value="2014&#x20;12.&#x20;ESS-SPA">2014 12. ESS-SPA</option>
+<option value="2019&#x20;13.&#x20;ESS-SPA">2019 13. ESS-SPA</option>
+<option value="2024&#x20;14.&#x20;ESS-SPA">2024 14. ESS-SPA</option>
+<option value="Unbekannt">Unbekannt</option></select>    </div>
+    </div>
+<div ><style type="text/css">.row {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create 6 equal columns that sits next to each other */
+.column {
+  flex: 16.66%;
+  padding: 0 4px;
+text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+width:150px;
+}
+@media screen and (max-width: 640px){.container{display: none;}}
+</style>
+<div class="container">
+<div class="row">
+<div class="column"><img src="../../../files/square/2583017ea8a17d29d74e2b9782b3b32f022de6af.jpg" />
+<p>Skulptur</p>
+</div>
+
+<div class="column"><img src="../../../files/square/972db143a61cb70d8a146cde85d9fa8537045fe9.jpg" />
+<p>Installation</p>
+</div>
+
+<div class="column"><img src="../../../files/square/d8682a6e798a487561dde16fb301a1333fc8af5b.jpg" />
+<p>Performance</p>
+</div>
+
+<div class="column"><img src="../../../files/square/0c9528b1f86cd6d146a9c1c320f2d15a6267fcd2.jpg" />
+<p>Vernissage</p>
+</div>
+
+<div class="column"><img src="../../../files/square/fc0f2b1709c38f9e45f6fa52f5a1b4db6a9aa62a.jpg" />
+<p>Austellungspublikum</p>
+</div>
+
+<div class="column"><img src="../../../files/square/d6f1b36744d9f46f509a15b1458c4446c941b3a1.jpg" />
+<p>Journalistische Beitr&auml;ge</p>
+</div>
+</div>
+</div></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_147">Gattung des dargestellten Motives</label>            </div>
+    <div class="inputs">
+        <select name="prompt_147" required="required"><option value="">Bitte wählen Sie eine Option aus.</option>
+<option value="Skulptur">Skulptur</option>
+<option value="Installation">Installation</option>
+<option value="Performance">Performance</option>
+<option value="Vernissage">Vernissage</option>
+<option value="Ausstellungspublikum">Ausstellungspublikum</option>
+<option value="Journalistische&#x20;Beitr&#xE4;ge">Journalistische Beiträge</option>
+<option value="Aufbau">Aufbau</option>
+<option value="Diverses">Diverses</option></select>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_139">Kommentieren Sie den hochgeladenen Beitrag. Zum Beispiel: In welchem Kontext steht der Beitrag? Wer hat die Fotografie gemacht? Wo steht die Skulptur? Wer und was ist darauf zu sehen? Wer spricht?</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_139" required="required"></textarea>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_149">Fügen Sie nach Wunsch passende Hashtags oder Links zu Ihrem Beitrag hinzu.</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_149"></textarea>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_144">Mailadresse (wird nicht publiziert)</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_144" required="required" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_185">Vorname Nachname oder Namen der Institution</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_185" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="anon_9">Ich möchte anonym bleiben</label>            </div>
+    <div class="inputs">
+        <input type="hidden" name="anon_9" value="0"><input type="checkbox" name="anon_9" value="1">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="tos_accept_9">Ich akzeptiere die <a href="https://omeka.unibe.ch/s/oedk/collecting/9/tos" target="_blank" style="text-decoration: underline;">Nutzungsbedingungen</a></label>            </div>
+    <div class="inputs">
+        <input type="checkbox" name="tos_accept_9" required="required" value="1">    </div>
+    </div>
+<div class="g-recaptcha" data-sitekey="6LfUFIYqAAAAAG-X4nFyAcc8U-ghBBs3pxEKw4cq"></div><input type="hidden" name="csrf_9" value="768ea65968487c96f00c2b40d341271e-42f60068bcc15a67026a40d1d4ceb3d1"><input type="submit" name="submit" value="Einreichen"></form><div class='break transparent'></div><p>
+<style type="text/css">#content h2 {margin-top: 24px;}
+#tos .field-meta{
+width: 95%;}
+#tos .inputs{padding-left: 0;}
+</style>
+</p>
+</div>
+        </div>
+        <footer>
+                        <hr style="border-style: dotted none none none;  border-width: 3px;">
+
+<div style="min-height: 10px;overflow: hidden;">
+    <div style="float: left;display: inline-block">
+        <a href="https://www.ikg.unibe.ch" target="_blank">Institut für Kunstgeschichte,</a>Universität Bern<br/>
+        <a href="https://www.dh.unibe.ch/" target="_blank">Digital Humanities</a>,Universität Bern<br/>
+        Oberfläche erstellt mit OMEKA-S<br/>
+        <a href="about.html">Impressum</a></div>
+
+    <div style="float: right;display: inline-block">
+        <div>Gefördert durch</div>
+        <div>
+            <a href="https://www.snf.ch/de" target="_blank"><img src="https://omeka.unibe.ch/files/original/3560c9198d88591445b3e90bc7e25d380782c72f.png" style="height: 100px;" /></a>
+            <a href="https://www.unibe.ch/" target="_blank"><img src="https://omeka.unibe.ch/files/original/355b5573584f573ab3d7af280168da69b1bc4373.png" style="height: 100px;"   /></a>
+
+        </div>
+    </div>
+</div>                    </footer>
+    <!-- Matomo -->
+<script type="text/javascript">
+
+if (window.location.hostname === 'www.corona-memory.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+} else if (window.location.hostname === 'www.publics-arts.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.www.publics-arts.ch"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+}
+</script>
+<!-- End Matomo Code --></body>
+</html>

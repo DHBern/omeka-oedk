@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="fr">    <head>
+        <meta charset="utf-8">
+<meta property="og&#x3A;title" content="Contribuer&#x20;&#xB7;&#x20;DH&#x40;UNIBE&#x20;Omeka">
+<meta property="og&#x3A;type" content="website">
+<meta property="og&#x3A;url" content="https&#x3A;&#x2F;&#x2F;www.publics-arts.ch&#x2F;s&#x2F;lpda&#x2F;page&#x2F;upload-doc">
+<meta name="viewport" content="width&#x3D;device-width,&#x20;initial-scale&#x3D;1">        <title>Contribuer · Les publics des arts · DH@UNIBE Omeka</title>        <link href="&#x2F;&#x2F;fonts.googleapis.com&#x2F;css&#x3F;family&#x3D;Archivo&#x2B;Black&#x7C;Assistant&#x3A;200,300,400" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/iconfonts.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/blog_nav.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/video.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../themes/oedk-lpda-theme/asset/css/style.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/vendor/leaflet.geosearch/assets/css/leaflet.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Mapping/asset/css/mapping.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Collecting/asset/css/collecting.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/css/page-blocks.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/FieldsAsTags/asset/css/fieldsastags.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../application/asset/vendor/chosen-js/chosen.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/AdvancedSearch/asset/css/search.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/css/language-switcher.css" media="screen" rel="stylesheet" type="text&#x2F;css">
+<link href="../../../modules/Internationalisation/asset/vendor/flag-icon-css/css/flag-icon.min.css" media="screen" rel="stylesheet" type="text&#x2F;css">                <script  src="&#x2F;&#x2F;ajax.googleapis.com&#x2F;ajax&#x2F;libs&#x2F;jquery&#x2F;3.5.1&#x2F;jquery.min.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/nav.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/view.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/tos.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/blog_nav.js"></script>
+<script  src="../../../themes/oedk-lpda-theme/asset/js/img_display.js"></script>
+<script  src="../../../application/asset/js/global.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/ckeditor.js"></script>
+<script  src="../../../application/asset/vendor/ckeditor/adapters/jquery.js"></script>
+<script >
+    //<!--
+    CKEDITOR.config.customConfig = '\x2Fapplication\x2Fasset\x2Fjs\x2Fckeditor_config.js\x3Fv\x3D3.1.1'
+    //-->
+</script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet/leaflet.js"></script>
+<script  src="../../../modules/Mapping/asset/js/mapping-collecting-form.js"></script>
+<script  src="../../../modules/Mapping/asset/vendor/leaflet.geosearch/dist/bundle.min.js"></script>
+<script  src="../../../modules/Collecting/asset/js/collecting-block.js"></script>
+<script  src="../../../application/asset/js/recaptcha.js"></script>
+<script  async="async" defer="defer" src="https&#x3A;&#x2F;&#x2F;www.google.com&#x2F;recaptcha&#x2F;api.js&#x3F;onload&#x3D;recaptchaCallback&amp;render&#x3D;explicit"></script>
+<script >
+    //<!--
+    
+Omeka.jsTranslate = function(str) {
+    var jsTranslations = {"Something went wrong":"Quelque chose s\u2019est mal pass\u00e9","Make private":"Rendre priv\u00e9","Make public":"Rendre public","Expand":"D\u00e9plier","Collapse":"Replier","You have unsaved changes.":"Vous avez des modifications non enregistr\u00e9es.","Restore item set":"R\u00e9tablir la collection","Close icon set":"Fermer l\u2019ensemble des ic\u00f4nes","Open icon set":"Ouvrir l\u2019ensemble des ic\u00f4nes","[Untitled]":"[Sans titre]","Failed loading resource template from API":"\u00c9chec du chargement du mod\u00e8le de ressource \u00e0 partir de l\u2019API","Restore property":"Restaurer la propri\u00e9t\u00e9","There are no available pages.":"Il n\u2019y a pas de page disponible.","Please enter a valid language tag":"Entrez une \u00e9tiquette de langue valide","Title":"Titre","Description":"Description","Automatic mapping of empty values":"Correspondance automatique des valeurs vides","Available":"Disponibles","Enabled":"Activ\u00e9","Find":"Trouver","Find resources\u2026":"Trouver des ressources\u2026","Processing\u2026":"En traitement\u2026","Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index":"Try to map automatically the metadata and the properties that are not mapped yet with the fields of the index","Advanced bulk edit":"Traitement en lot avanc\u00e9","The actions are processed in the order of the form. Be careful when mixing them.":"Les actions sont trait\u00e9es dans l\u2019ordre du formulaire. Il convient de faire attention lorsque plusieurs actions sont choisies.","Cleaning":"Nettoyage","Convert datatype":"Conversion du type de donn\u00e9es","Displace values":"D\u00e9placer des valeurs","Explode values":"\u00c9clater des valeurs","Media HTML":"M\u00e9dia HTML","Order values":"Trier les valeurs","Replace literal values":"Remplacer des valeurs textuelles","Visibility of values":"Visibilit\u00e9 des valeurs","Remove mapping":"Supprimer le mappage"};
+    return (str in jsTranslations) ? jsTranslations[str] : str;
+};
+    //-->
+</script>
+<script  defer="defer" src="../../../application/asset/vendor/chosen-js/chosen.jquery.min.js"></script>
+<script  defer="defer" src="../../../modules/AdvancedSearch/asset/js/search.js"></script>
+        <style>
+                        #top-nav > ul > li > a,
+            #featured .record a,
+            .site-page-pagination a,
+            #top-nav > ul > li > a,
+            #featured .record a,
+            .site-page-pagination a,
+            .results .result-title a {
+                color: transparent            }
+
+            p a,
+            span a,
+            .button,
+            button,
+            input[type="submit"],
+            .secondary-nav li a,
+            .pagination a.button,
+            .item-pagination a,
+            #featured .featured-meta h3,
+            .advanced-search,
+            .value a span,
+            .sub-menu,
+            .results .result-title a,
+            .results .resource-link .resource-name,
+            .results > a,
+            .results > ul + a,
+            .results li > a,
+            .breadcrumbs a,
+            #content .resource a,
+            .property a {
+                background-color: transparent;
+            }
+            
+        </style>
+    </head>
+
+    <body class="page"><div style="background:#fff3cd;padding:.5em 1em;font:14px sans-serif;border-bottom:1px solid #e0c97f">Static archive of a former Omeka site (snapshot 2026-11-24). Search and interactive features are not available.</div>        <div id="content" role="main">
+            
+    
+    
+<div class="blocks">
+    <div class='break transparent'></div><div class='break transparent'></div><style type="text/css">input,textarea{width: 100%;}
+form .field .field-meta, form .field label, form .field .label {color: white;}
+input[type="checkbox"]{width: 2%;}
+input[type="submit"]{background-color: var(--orange);
+width: 15%;font-size: 22px;}
+
+#intro{margin-top: 150px;
+}
+#content h2 {
+  margin-top: 24px;
+}
+@media screen and (max-width: 640px){
+#intro{margin-top: -10px;}
+input[type="checkbox"]{width: 5%;float:left;}
+input[type="submit"]{background-color: var(--orange);
+width: 100%;font-size: 22px;}
+
+}
+</style>
+<p id="intro">Ici, vous pouvez envoyer des souvenirs personnels sous forme de textes, d&#39;images, de captures d&#39;ecran, de vid&eacute;os, de fichiers audios ainsi que de liens. M&ecirc;me des choses apparemment insignifiantes peuvent &ecirc;tre importantes pour le projet de recherche. Si possible, veuillez partager diff&eacute;rentes vues, par exemple le recto et le verso d&#39;une photographie. Nous v&eacute;rifions les droits d&#39;auteur de chaque envoi lors de la publication. Nous vous remercions de votre compr&eacute;hension si la v&eacute;rification des droits peut prendre un peu de temps dans certains cas.</p>
+
+<p><em>Seules les contributions dont vous &ecirc;tes l&#39;auteur / l&#39;autrice peuvent &ecirc;tre ajout&eacute;es. Les contenus sont sous la responsabilit&eacute; de la personne ou de l&#39;entit&eacute; qui les publie et les rend accessibles dans le cadre de ce service. Apr&egrave;s le t&eacute;l&eacute;chargement, nous v&eacute;rifions d&#39;abord les droits d&#39;auteur et droits personnels des contributions t&eacute;l&eacute;charg&eacute;es. Si n&eacute;cessaire, des autorisations de publication sont demand&eacute;es &ndash; nous nous r&eacute;servons le droit de ne pas publier du mat&eacute;riel si les droits de tiers n&#39;ont pas pu &ecirc;tre clarifi&eacute;s. En t&eacute;l&eacute;chargeant, vous acceptez que les donn&eacute;es soient enregistr&eacute;es et publi&eacute;es pour une dur&eacute;e illimit&eacute;e. Les auteurs peuvent &agrave; tout moment demander la suppression des contributions publi&eacute;es aupr&egrave;s des gestionnaires du site. Pour t&eacute;l&eacute;charger une contribution, il faut indiquer une adresse e-mail valable. Ces donn&eacute;es ne seront pas publi&eacute;es. Vous pouvez marquer votre contribution de votre nom ou d&#39;un alias, mais il est &eacute;galement possible de publier une contribution de fa&ccedil;on anonyme. Nous nous r&eacute;servons le droit de modifier ou de compl&eacute;ter les m&eacute;tadonn&eacute;es.</em></p>
+<h2>Votre contribution</h2>
+<form method="POST" name="collecting_form_16" action="https://omeka.unibe.ch/s/lpda/collecting/16/submit" enctype="multipart&#x2F;form-data" id="collecting_form_16" onsubmit="return false" onsubmit="return false"><div ><p><small>Les donn&eacute;es marqu&eacute;es d&#39;un * sont obligatoires et seront publi&eacute;es.</small></p></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_156">Titre</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_156" required="required" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_158">Auteur texte/image/vidéo/audio</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_158" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_159">Artiste</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_159" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_160">Définissez votre rôle</label>            </div>
+    <div class="inputs">
+        <select name="prompt_160" required="required"><option value="">Merci de choisir…</option>
+<option value="Archiviste">Archiviste</option>
+<option value="Travailleuse&#x20;culturel&#x3A;le">Travailleuse culturel:le</option>
+<option value="Photographe">Photographe</option>
+<option value="Artiste">Artiste</option>
+<option value="P&#xE9;dagogue">Pédagogue</option>
+<option value="Fan">Fan</option>
+<option value="Citoyen&#x3A;ne&#x20;de&#x20;protestation">Citoyen:ne de protestation</option>
+<option value="Activiste">Activiste</option>
+<option value="Autres">Autres</option></select>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_161">Décrivez votre autre rôle</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_161" value="">    </div>
+    </div>
+<input type="hidden" name="prompt_162" value=""><div class="field required">
+    <div class="field-meta">
+        <label for="file&#x5B;162&#x5D;">Ici, vous pouvez charger votre fichier. Veuillez ajouter plusieurs vues si possible. Taille maximale du fichier 256MB</label>            </div>
+    <div class="inputs">
+        <input type="file" name="file&#x5B;162&#x5D;&#x5B;&#x5D;" required="required" multiple="multiple">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_164">Catégorie</label>            </div>
+    <div class="inputs">
+        <select name="prompt_164" required="required"><option value="">Merci de choisir…</option>
+<option value="Souvenir&#x2F;Anecdote">Souvenir/Anecdote</option>
+<option value="&#x0152;uvre&#x20;d&#x27;art">Œuvre d&#039;art</option>
+<option value="Personnes">Personnes</option>
+<option value="Article&#x20;&#x28;journal,&#x20;etc.&#x29;">Article (journal, etc.)</option>
+<option value="R&#xE9;seaux&#x20;sociaux&#x20;&#x28;capture&#x20;d&#x2019;ecran&#x29;">Réseaux sociaux (capture d’ecran)</option>
+<option value="Autre">Autre</option></select>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_165">A quelle année la contribution fait-il référence ?</label>            </div>
+    <div class="inputs">
+        <select name="prompt_165" required="required"><option value="">Merci de choisir…</option>
+<option value="1954&#x20;1.&#x20;ESS-SPA">1954 1. ESS-SPA</option>
+<option value="1958&#x20;2.&#x20;ESS-SPA">1958 2. ESS-SPA</option>
+<option value="1962&#x20;3.&#x20;ESS-SPA">1962 3. ESS-SPA</option>
+<option value="1966&#x20;4.&#x20;ESS-SPA">1966 4. ESS-SPA</option>
+<option value="1970&#x20;5.&#x20;ESS-SPA">1970 5. ESS-SPA</option>
+<option value="1975&#x20;6.&#x20;ESS-SPA">1975 6. ESS-SPA</option>
+<option value="1980&#x20;7.&#x20;ESS-SPA">1980 7. ESS-SPA</option>
+<option value="1986&#x20;8.&#x20;ESS-SPA">1986 8. ESS-SPA</option>
+<option value="1991&#x20;9.&#x20;ESS-SPA">1991 9. ESS-SPA</option>
+<option value="2000&#x20;10.&#x20;ESS-SPA">2000 10. ESS-SPA</option>
+<option value="2009&#x20;11.&#x20;ESS-SPA">2009 11. ESS-SPA</option>
+<option value="2014&#x20;12.&#x20;ESS-SPA">2014 12. ESS-SPA</option>
+<option value="2019&#x20;13.&#x20;ESS-SPA">2019 13. ESS-SPA</option>
+<option value="2024&#x20;14.&#x20;ESS-SPA">2024 14. ESS-SPA</option>
+<option value="Iconnue">Iconnue</option></select>    </div>
+    </div>
+<div ><style type="text/css">.row {
+  display: flex;
+  padding: 0 4px;
+}
+
+/* Create 6 equal columns that sits next to each other */
+.column {
+  flex: 16.66%;
+  padding: 0 4px;
+text-align: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+width:150px;}
+</style>
+<div class="container">
+<div class="row">
+<div class="column"><img src="../../../files/square/2583017ea8a17d29d74e2b9782b3b32f022de6af.jpg" />
+<p>Sculpture</p>
+</div>
+
+<div class="column"><img src="../../../files/square/972db143a61cb70d8a146cde85d9fa8537045fe9.jpg" />
+<p>Installation</p>
+</div>
+
+<div class="column"><img src="../../../files/square/d8682a6e798a487561dde16fb301a1333fc8af5b.jpg" />
+<p>Performance</p>
+</div>
+
+<div class="column"><img src="../../../files/square/0c9528b1f86cd6d146a9c1c320f2d15a6267fcd2.jpg" />
+<p>Vernissage</p>
+</div>
+
+<div class="column"><img src="../../../files/square/fc0f2b1709c38f9e45f6fa52f5a1b4db6a9aa62a.jpg" />
+<p>Public de l&#39;exposition</p>
+</div>
+
+<div class="column"><img src="../../../files/square/d6f1b36744d9f46f509a15b1458c4446c941b3a1.jpg" />
+<p>Contributions journalistiques</p>
+</div>
+</div>
+</div></div><div class="field required">
+    <div class="field-meta">
+        <label for="prompt_167">Genre du sujet représenté</label>            </div>
+    <div class="inputs">
+        <select name="prompt_167" required="required"><option value="">Merci de choisir…</option>
+<option value="Sculpture">Sculpture</option>
+<option value="Installation">Installation</option>
+<option value="Performance">Performance</option>
+<option value="Vernissage">Vernissage</option>
+<option value="Public&#x20;de&#x20;l&#x27;exposition">Public de l&#039;exposition</option>
+<option value="Contributions&#x20;journalistiques">Contributions journalistiques</option>
+<option value="Construction">Construction</option>
+<option value="Divers">Divers</option></select>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_168">Commentez le contenu publié ! Par exemple : comment le décrire ? Quel est le contexte de la contribution ? Qui a pris la photo ? Où la sculpture se trouve-t-elle ? Qui et que voit-on sur la photo ? Qui parle ?</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_168" required="required"></textarea>    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="prompt_172">Ajoutez des hashtags ou liens appropriés à votre message.</label>            </div>
+    <div class="inputs">
+        <textarea name="prompt_172"></textarea>    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_171">Adresse e-mail (ne sera pas publiée)</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_171" required="required" value="">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="prompt_187">Prénom Nom ou nom de l&#039;institution</label>            </div>
+    <div class="inputs">
+        <input type="text" name="prompt_187" required="required" value="">    </div>
+    </div>
+<div class="field">
+    <div class="field-meta">
+        <label for="anon_16">Je veux déposer anonymement</label>            </div>
+    <div class="inputs">
+        <input type="hidden" name="anon_16" value="0"><input type="checkbox" name="anon_16" value="1">    </div>
+    </div>
+<div class="field required">
+    <div class="field-meta">
+        <label for="tos_accept_16">J'accepte les <a href="https://omeka.unibe.ch/s/lpda/collecting/16/tos" target="_blank" style="text-decoration: underline;">Conditions d'utilisation</a></label>            </div>
+    <div class="inputs">
+        <input type="checkbox" name="tos_accept_16" required="required" value="1">    </div>
+    </div>
+<div class="g-recaptcha" data-sitekey="6LfUFIYqAAAAAG-X4nFyAcc8U-ghBBs3pxEKw4cq"></div><input type="hidden" name="csrf_16" value="52b5cfdf7d5143df5767f2984a8c03d8-a81e60c5dc520b7ec9c159c6b5082a23"><input type="submit" name="submit" value="Soumettre"></form><div class="tos style"><p>
+<style type="text/css">#content h2 {margin-top: 24px;}
+#tos .field-meta{
+width: 95%;}
+#tos .inputs{padding-left: 0;}
+</style>
+</p>
+</div></div>
+        </div>
+        <footer>
+                        <hr style="border-style: dotted none none none;  border-width: 3px;">
+
+<div style="min-height: 10px;overflow: hidden;">
+    <div style="float: left;display: inline-block">
+        <a href="https://www.ikg.unibe.ch" target="_blank"> Institut d'histoire de l'art</a>,Université de Berne<br/>
+        <a href="https://www.dh.unibe.ch/" target="_blank">Digital Humanities</a>,Université de Berne<br/>
+        Interface créée avec OMEKA-S<br/>
+        <a href="about.html">Impressum</a></div>
+
+    <div style="float: right;display: inline-block">
+        <div>Soutenu par</div>
+        <div>
+            <a href="https://www.snf.ch/de" target="_blank"><img src="https://omeka.unibe.ch/files/original/3560c9198d88591445b3e90bc7e25d380782c72f.png" style="height: 100px;" /></a>
+            <a href="https://www.unibe.ch/" target="_blank"><img src="https://omeka.unibe.ch/files/original/355b5573584f573ab3d7af280168da69b1bc4373.png" style="height: 100px;"   /></a>
+
+        </div>
+    </div>
+</div>                    </footer>
+    <!-- Matomo -->
+<script type="text/javascript">
+
+if (window.location.hostname === 'www.corona-memory.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+} else if (window.location.hostname === 'www.publics-arts.ch') {
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setCookieDomain", "*.www.publics-arts.ch"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.corona-memory.ch/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+}
+</script>
+<!-- End Matomo Code --></body>
+</html>
